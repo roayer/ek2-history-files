@@ -1,0 +1,855 @@
+on_game_start = {
+	on_actions = { #basically write whatever you want below and define it for the event and it will have already fire
+		heirs_of_reman_religion_addon
+		heirs_of_reman_event_troops_addon
+		bdr_primogeniture
+		bdr_cyrodiil_content
+		bdr_skyrim_content
+		bdr_hammerfell_content
+		bdr_morrowind_content
+		bdr_summerset_content
+		bdr_black_marsh_content
+		bdr_high_rock_content
+	}
+}
+
+heirs_of_reman_religion_addon = {
+	effect = {
+		religion:nedic_nordic_religion = { every_faith = { 
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_shunned }
+				remove_doctrine = doctrine_adultery_women_shunned
+				add_doctrine = doctrine_adultery_women_crime
+				}
+			}
+		}
+		religion:aldmeri_religion = { every_faith = { 
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_shunned }
+				remove_doctrine = doctrine_adultery_women_shunned
+				add_doctrine = doctrine_adultery_women_crime
+				}
+			}
+		}
+		religion:yokudan_religion = { every_faith = { 
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_shunned }
+				remove_doctrine = doctrine_adultery_women_shunned
+				add_doctrine = doctrine_adultery_women_crime
+				}
+			}
+		}
+		religion:malacath_religion = { every_faith = { 
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_accepted }
+				remove_doctrine = doctrine_adultery_women_accepted
+				add_doctrine = doctrine_adultery_women_crime
+				}
+			}
+		}
+		religion:akaviri_religion = { every_faith = { 
+			if = {
+				limit = { has_doctrine = aurbic_hostility_doctrine }
+				remove_doctrine = aurbic_hostility_doctrine
+				add_doctrine = doctrine_adultery_women_crime
+				}
+			}
+		}
+		faith:imperial_cult = { 
+			if = {
+				limit = { has_doctrine = doctrine_consanguinity_restricted }
+				remove_doctrine = doctrine_consanguinity_restricted
+				add_doctrine = doctrine_consanguinity_cousins
+			}
+			if = { 
+						limit = { has_doctrine = doctrine_gender_equal }
+						remove_doctrine = doctrine_gender_equal
+						add_doctrine = doctrine_gender_male_dominated 
+					}
+				}
+		faith:breton_cult = { 
+			if = {
+				limit = { has_doctrine = doctrine_consanguinity_cousins }
+				remove_doctrine = doctrine_consanguinity_cousins
+				add_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+				}
+			}
+		faith:code_of_malacath = { 
+			if = {
+				limit = { has_doctrine = doctrine_consanguinity_cousins }
+				remove_doctrine = doctrine_consanguinity_cousins
+				add_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+				}
+			}
+		faith:court_dawnbeauty = { 
+			if = {
+				limit = { has_doctrine = doctrine_consanguinity_cousins }
+				remove_doctrine = doctrine_consanguinity_cousins
+				add_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+				}
+			}
+		faith:old_velothi = { 
+			if = {
+				limit = { has_doctrine = doctrine_consanguinity_cousins }
+				remove_doctrine = doctrine_consanguinity_cousins
+				add_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+				}
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_accepted }
+				remove_doctrine = doctrine_adultery_women_accepted
+				add_doctrine = doctrine_adultery_women_crime
+				}
+			}
+	}
+}
+
+heirs_of_reman_event_troops_addon = {
+	effect = {
+		character:mannimarco_1000 = { 
+			spawn_army = {  men_at_arms = { type = daedra men = 1000 } location = capital_province }
+			add_gold = 1120
+			} #Mannimarco AI buff
+		character:fyr_100 = { 
+			spawn_army = {  men_at_arms = { type = daedra men = 500 } location = capital_province }
+			add_gold = 820
+			} #Fyr AI buff
+		character:tharn_abnur = { 
+			remove_trait = lifespan_2
+			add_trait = lifespan_3
+			add_trait = athletic
+			}
+		character:direnni_1001 = { add_trait = arcana_good_2 add_trait = battlemage add_gold = 300 }
+		character:telvanni_105 = { remove_trait = bastard add_trait = bastard_founder }
+	}
+}
+
+bdr_primogeniture = {
+	effect = {
+		every_culture_global = {
+			add_innovation = innovation_primogeniture
+		}
+	}
+}
+bdr_cyrodiil_content = {
+	effect = {
+	culture:strident = {
+		add_innovation = innovation_seat_of_empires 
+	}
+	culture:colovian = {
+		add_innovation = innovation_abecean_piratry
+	}
+	
+			title:c_summerfield = { #Cheydinhal
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_bethal_gray = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		
+		title:c_sundercliff = { #Bravil
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_ondo = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_mir_corrup = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_valus_highland = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_aurus = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_nayon = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_cuptor = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_bedrock_break = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_diabell = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_juliek = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		
+		title:c_dark_fathom = { #Leyawiin
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_deepscorn_hollow = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_nomore = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		title:c_tyrios = {
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:nibenese
+		}
+		
+		title:c_veyond_cove = { #Heartlands
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:heartlander
+		}
+		
+		title:c_arenthia = { #Colovian Valenwood Skingrad
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:colovian
+		}
+		title:c_sphinxmoth = { #Colovian Valenwood
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:colovian
+		}
+
+
+		title:c_jirius = { #Anvil
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:strident
+		}
+		title:c_niryastare = { #Anvil
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:strident
+		}
+		title:c_birich = { #Anvil
+			set_county_faith = faith:imperial_cult
+			set_county_culture = culture:strident
+		}
+		
+		province:1863 = { add_building = castle_02 add_building = farm_estates_04 } #Sancre Tor
+		province:1912 = { add_building = castle_03 } #chorrol
+		
+		province:2290 = { add_building = castle_03 } #cheydinhal
+		
+		province:2359 = { add_building = castle_02 } #Bravil
+		province:2360 = { add_building = city_02 add_building = guild_halls_04 } #Bravil
+		province:2359 = { add_building = castle_02 } #Bravil
+		province:2394 = { add_building = castle_02 add_building = barracks_02 add_building = logging_camps_04 } #Cuptor
+		
+		province:1772 = { add_building = city_02 } #Kvatch should be bigger
+		
+		province:2007 = { add_building = barracks_04 } #Skingrad
+		
+		province:477 = { add_building = castle_02 add_building = barracks_02 add_building = common_tradeport_02 } #Stirk
+		province:1721 = { add_building = city_02 add_building = common_tradeport_04 } #Anvil should be bigger
+		province:1723 = { add_building = common_tradeport_04 add_building = barracks_02 } #anvil should have a port and garrison
+	}
+}
+
+bdr_skyrim_content = {
+	effect = {
+
+		title:c_falkreath = { #Falkreath
+			set_county_faith = faith:nord_cult
+			set_county_culture = culture:cyro_nord
+		}
+		title:c_morgate = { #Falkreath
+			set_county_faith = faith:nord_cult
+			set_county_culture = culture:cyro_nord
+		}
+		title:c_evergreen = { #Falkreath
+			set_county_faith = faith:old_gods
+			set_county_culture = culture:reachfolk
+		}
+		title:c_half_moon = { #Falkreath
+			set_county_faith = faith:old_gods
+			set_county_culture = culture:reachfolk
+		}
+		
+		title:c_purewater = { #Markarth
+			set_county_faith = faith:old_gods
+			set_county_culture = culture:reachfolk
+		}		
+		title:c_brasswater = { #Markarth
+			set_county_faith = faith:old_gods
+			set_county_culture = culture:reachfolk
+		}			
+		title:c_chillbain = { #Markarth
+			set_county_faith = faith:nord_cult
+			set_county_culture = culture:westmarcher
+		}
+
+		title:c_mixwater = { #Eastmarch
+			set_county_faith = faith:nord_cult
+			set_county_culture = culture:eastmarcher
+		}
+		title:c_gloombound = { #Eastmarch
+			set_county_faith = faith:nord_cult
+			set_county_culture = culture:eastmarcher
+		}
+		
+		title:c_highpoint = { #Solstein
+			set_county_faith = faith:anuic_skaal
+			set_county_culture = culture:skaal
+		}	
+		
+		province:1448 = { add_building = barracks_04 } #Falkreath buff
+		
+		province:1426 = { set_holding_type = castle_holding add_building = castle_02 } #Chillbain is Karthald Markarth
+		province:1459 = { add_building = barracks_06 add_building = quarries_06 add_building = castle_03 } #Markarth buff
+		province:1460 = { add_building = city_02 add_building = guild_halls_04 } #Markarth buff
+		
+		province:1459 = { add_building = barracks_02 add_building = hill_farms_04 } #Dawnstar buff
+		
+		province:1112 = { add_building = castle_02 } #major castle Morvunskar Eastmarch
+		province:1109 = { set_holding_type = castle_holding add_building = castle_01 } #gloombound fortified
+		
+	}
+}
+
+bdr_hammerfell_content = {
+	effect = {
+
+		title:c_sobatu = { #Sunforge
+			set_county_faith = faith:satakal
+			set_county_culture = culture:alikr
+		}
+		title:c_wadathe = { #Sunforge
+			set_county_faith = faith:satakal
+			set_county_culture = culture:alikr
+		}
+		title:c_jamul = { #Sunforge
+			set_county_faith = faith:satakal
+			set_county_culture = culture:alikr
+		}
+		title:c_helland = { #Sunforge
+			set_county_faith = faith:satakal
+			set_county_culture = culture:alikr
+		}
+		title:c_heldorn = { #Sunforge
+			set_county_faith = faith:redguard_cult
+			set_county_culture = culture:forebear
+		}
+
+
+		title:c_dragonstar = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_dragonwall = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_fearfang = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_skypinnacle = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_lothna = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_skyreach = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_abdir = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_illthag = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_hel_ra = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:rahniza = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:reinhold = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:thunder_falls = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}	
+		title:lankara = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:kardala = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}			
+	
+
+		title:c_spellscar = { #Elinhir
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_chiselshriek = { #Elinhir
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_high_hall = { #Elinhir
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_nimbel = { #Elinhir
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:c_rimwatch = { #Elinhir
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:belkarth = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+		title:reinhold = { #Dragonstar
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}			
+		
+		title:c_sentinel = { #Sentinel
+			set_county_faith = faith:redguard_cult
+			set_county_culture = culture:forebear
+		}
+		title:c_ayasofya = { #Sentinel
+			set_county_faith = faith:redguard_cult
+			set_county_culture = culture:forebear
+		}
+		title:c_cybiades = { #Sentinel
+			set_county_faith = faith:redguard_cult
+			set_county_culture = culture:forebear
+		}
+		
+		title:c_dragonhorn = { #Hegathe
+			set_county_faith = faith:tall_papa
+			set_county_culture = culture:crown
+		}
+
+		
+		
+		province:825 = { set_holding_type = castle_holding add_building = castle_01 } #Fearfang Dragonstar
+		province:829 = { set_holding_type = castle_holding add_building = castle_01 } #Skypinnacle Dragonstar
+		province:834 = { set_holding_type = castle_holding add_building = castle_01 } #Skyreach Dragonstar
+
+		province:843 = { set_holding_type = castle_holding add_building = castle_02 } #Hel Ra 
+		province:836 = { set_holding_type = castle_holding add_building = castle_01 } #Lankara
+		province:839 = { set_holding_type = castle_holding add_building = castle_01 } #kardala
+		
+		province:732 = { add_building = castle_02 } #Taneth
+		province:2641 = { add_building = city_02 add_building = guild_halls_02 } #Taneth
+		
+		
+		province:765 = { add_building = castle_02 } #Rihad
+		province:767 = { add_building = city_02 add_building = guild_halls_03 } #Rihad
+		
+		province:509 = { add_building = city_02 add_building = guild_halls_04 } #Abah
+		
+		province:434 = { add_building = city_03 add_building = guild_halls_05 } #Sentinel
+		province:435 = { add_building = castle_03 add_building = barracks_03 } #Sentinel
+		province:413 = { add_building = castle_02 } #Bergama
+		province:430 = { set_holding_type = castle_holding add_building = castle_01 add_building = barracks_02 } #santaki
+		
+		province:387 = { add_building = castle_02 } #Ojwambu Hallins Stand
+		province:388 = { add_building = city_02 add_building = guild_halls_03 } #Hallins Stand
+		
+		province:464 = { add_building = common_tradeport_04 add_building = barracks_04 } #Hegathe	
+		province:466 = { add_building = city_02 add_building = guild_halls_04 } #Hegathe	
+		province:488 = { add_building = temple_03 add_building = tradeport_02 } #Hegathe	
+		province:446 = { set_holding_type = castle_holding add_building = castle_01 } #Sunkeep
+
+		province:3160 = { add_building = castle_02 add_building = common_tradeport_04 } #High Isle Systres
+		province:3162 = { add_building = city_02 add_building = common_tradeport_04 } #High Isle Systres
+	}
+}
+
+bdr_morrowind_content = {
+	effect = {
+		title:c_darissa = {
+			set_county_faith = faith:tribunal_temple
+			set_county_culture = culture:gah_julan
+		}
+		title:c_rhanim = {
+			set_county_faith = faith:tribunal_temple
+			set_county_culture = culture:gah_julan
+		}
+		title:c_ganaris = {
+			set_county_faith = faith:tribunal_temple
+			set_county_culture = culture:gah_julan
+		}
+		title:c_aldera = {
+			set_county_faith = faith:tribunal_temple
+			set_county_culture = culture:gah_julan
+		}
+		title:c_marahk_bazhul = {
+			set_county_faith = faith:tribunal_temple
+			set_county_culture = culture:gah_julan
+		}
+		
+		title:c_malak_maw = {
+			set_county_faith = faith:tribunal_temple
+			set_county_culture = culture:armun_an
+		}
+		
+		title:c_oren = {
+			set_county_faith = faith:tribunal_temple
+			set_county_culture = culture:chi_addun
+		}
+
+		province:5345 = { add_building = barracks_04 } #blacklight Redoran
+		province:5346 = { add_building = city_03 } #Blacklight Barony
+		province:2718 = { set_holding_type = city_holding add_building = city_02 } #Blacklight Barony 
+		province:2743 = { set_holding_type = castle_holding add_building = barracks_02 } #rhanim Barony
+		province:2736 = { set_holding_type = castle_holding add_building = barracks_02 } #Darissa Barony
+		province:2739 = { set_holding_type = castle_holding add_building = castle_02 } #Ganaris Barony
+		province:2756 = { set_holding_type = castle_holding add_building = barracks_02 } #Aldera Barony
+		province:5206 = { set_holding_type = castle_holding add_building = barracks_01 } #Marahk Bazhul screw the orcs Barony
+		
+		province:2869 = { set_holding_type = castle_holding add_building = castle_02 } #Malak Maw Barony Haalu
+		province:2836 = { set_holding_type = city_holding add_building = city_02 add_building = guild_halls_03 } #Gnarsis Barony
+		province:2833 = { add_building = barracks_04 } #Gnarsis Barony
+		
+		province:4570 = { set_holding_type = castle_holding add_building = castle_02 add_building = common_tradeport_3 } #Oren Telvanni
+	}
+}
+
+bdr_summerset_content = {
+	effect = {
+		
+		title:c_gralan = { #Cloudrest
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		title:c_ald_mora = { #Cloudrest
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		title:c_rosefield = { #Cloudrest
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		
+		title:c_caelcalen = { #Shimmerene
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		title:c_loredan = { #Shimmerene
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}	
+	
+		title:c_marnvalfen = { #Sunhold
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		title:c_visendel = { #Sunhold
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		title:c_lillok = { #Sunhold
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		title:c_nesteholt = { #Sunhold
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		title:c_auvasin = { #Sunhold
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+		
+		
+		title:c_tinistegil = { #Alinor
+			set_county_faith = faith:auriel
+			set_county_culture = culture:alinor
+		}
+
+		title:c_cliffwatch = { #Vulkhel
+			set_county_faith = faith:auriel
+			set_county_culture = culture:auridon
+		}
+		
+		province:4763 = { set_holding_type = castle_holding add_building = castle_02 } #Gralan Cloudrest
+		province:3054 = { add_building = common_tradeport_04 add_building = hill_farms_03  add_building = castle_02 } #Kings Haven Cloudrest
+		province:3041 = { set_holding_type = castle_holding add_building = castle_03 } #Crystal Tower so its useful
+		province:3042 = { set_holding_type = temple_holding add_building = temple_04 add_buildin = monasteries_04 } #Crystal Tower so its useful
+		
+		province:3064 = { add_building = common_tradeport_03 add_building = hill_farms_03 } #Lillandrial
+		
+		province:3146 = { set_holding_type = castle_holding add_building = castle_01 } #Loredan Shimmerene
+		province:3140 = { set_holding_type = castle_holding add_building = castle_01 } #Caelcalen Shimmerene
+
+		province:4759 = { set_holding_type = castle_holding add_building = castle_01 } #Marnvalfen Sunhold
+		province:4766 = { set_holding_type = castle_holding add_building = castle_01 } #Lillok Sunhold
+
+		province:2936 = { set_holding_type = city_holding add_building = city_04 } #Alinor new city
+		character:arana_1000 = { add_prestige_level = 1 add_prestige = 700 } #Or he is disgraced from the war
+		
+		province:2915 = { set_holding_type = castle_holding add_building = castle_01 } #Cliffwatch Vulkhel
+		
+		province:2870 = { add_building = castle_02 add_building = common_tradeport_04 } #Skywatch 
+		province:2872 = { set_holding_type = city_holding add_building = city_02  add_building = common_tradeport_04 } #Skywatch
+		province:2875 = { add_building = castle_02 } #Skywatch border county island
+		character:errinorne_36351 = { add_trait = disinherited } #So her brother inherits and you get the veiled queen
+
+		province:2671 = { add_building = common_tradeport_04 } #Firsthold
+		province:2672 = { add_building = city_03  add_building = common_tradeport_04 } #Firsthold city
+		province:2658 = { add_building = castle_02  add_building = common_tradeport_03 } #Rilis Isle
+	
+	}
+}
+
+bdr_black_marsh_content = {
+	effect = {
+		title:c_rockpark = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hapsleet
+		}
+		title:c_branchgrove = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hapsleet
+		}
+		title:c_seaspring = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hapsleet
+		}
+		title:c_shutan = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hapsleet
+		}
+		title:c_archon = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hapsleet
+		}
+		
+		title:c_blackrose_prison = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hapsleet
+		}
+		title:c_echoing_hollow = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		title:c_lakemire = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		title:c_root_whisper = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		
+		title:c_xul_thuxis = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		title:c_blackrose = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		title:c_shageel = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		title:c_buwomousa= {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		title:c_teel_asutire= {
+			set_county_faith = faith:hist
+			set_county_culture = culture:agaceph
+		}
+		
+		title:c_soulrest = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:paatru
+		}
+		title:c_hearthshield = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:paatru
+		}
+		title:c_seastone = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:paatru
+		}
+		title:c_chasepoint = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:paatru
+		}
+		title:c_shahe_bak = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:naga
+		}
+		title:c_ove_shu = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:naga
+		}
+		title:c_topal = {
+			set_county_faith = faith:twomoonsdance
+			set_county_culture = culture:pellitinian
+		}
+		title:c_brittlecoast = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:naga
+		}
+		title:c_deathwart_pond = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		
+		title:c_murkwater = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_loriasel = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_al_nashukiul_el = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_hajhuthilweel = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_uxisteilul = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_hill_xeel = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_arx_corinium = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_sul = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:sarpa
+		}
+		title:c_cradle_of_shadows = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hleel
+		}
+		title:c_shaie_creek = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hleel
+		}
+		
+		title:c_riverbridge = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hleel
+		}
+		title:c_drywell = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hleel
+		}
+		title:c_redrock = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hleel
+		}
+		title:c_stormhold = {
+			set_county_faith = faith:hist
+			set_county_culture = culture:hleel
+		}
+		
+		province:4962 = { set_holding_type = castle_holding add_building = castle_02 } #Topal isle colonized by cats
+		province:4847 = { add_building = castle_03 } #developed helstrom
+		province:4851 = { set_holding_type = castle_holding add_building = castle_02 } #developed helstrom
+		province:4852 = { set_holding_type = castle_holding add_building = castle_02 } #developed helstrom
+		province:4855 = { set_holding_type = castle_holding add_building = castle_02 } #developed helstrom
+		province:4858 = { set_holding_type = castle_holding add_building = castle_02 } #developed helstrom
+		province:5104 = { add_building = castle_03 add_building = barracks_04 } #pirate queen has 3000 years to have a castle not be shit
+		province:5043 = { add_building = castle_02 add_building = barracks_02} #pirate base needs castles
+		province:5030 = { set_holding_type = castle_holding add_building = castle_02 } #Dres would have fortified territory
+		province:5039 = { set_holding_type = castle_holding add_building = castle_02 } #Dres would have fortified territory
+		province:4694 = { set_holding_type = castle_holding add_building = castle_01 } #Dres would have fortified territory stormhold duchy
+		province:4697 = { set_holding_type = castle_holding add_building = castle_01 } #Dres would have fortified territory stormhold duchy
+	}
+}
+
+bdr_high_rock_content = {
+	effect = {
+		title:c_scarp = {
+			set_county_faith = faith:code_of_malacath
+			set_county_culture = culture:mountain_orc
+		}
+		title:c_cambrian = {
+			set_county_faith = faith:code_of_malacath
+			set_county_culture = culture:mountain_orc
+		}
+		title:c_bonerock = {
+			set_county_faith = faith:code_of_malacath
+			set_county_culture = culture:mountain_orc
+		}
+		title:c_royan = {
+			set_county_faith = faith:code_of_malacath
+			set_county_culture = culture:mountain_orc
+		}
+		
+		title:c_mournoth= {
+			set_county_faith = faith:breton_cult
+			set_county_culture = culture:iliac
+		}
+		title:c_oxshire = {
+			set_county_faith = faith:breton_cult
+			set_county_culture = culture:iliac
+		}
+		title:c_murcien = {
+			set_county_faith = faith:breton_cult
+			set_county_culture = culture:iliac
+		}
+		title:c_glen = {
+			set_county_faith = faith:breton_cult
+			set_county_culture = culture:iliac
+		}
+		title:c_ephesus = {
+			set_county_faith = faith:redguard_cult
+			set_county_culture = culture:forebear
+		}
+		title:c_dunkarn = {
+			set_county_faith = faith:old_gods
+			set_county_culture = culture:reachfolk
+		}
+		title:c_kerbol = {
+			set_county_faith = faith:old_gods
+			set_county_culture = culture:reachfolk
+		}
+		
+		title:c_rhalta = {
+			set_county_faith = faith:breton_cult
+			set_county_culture = culture:glenumbran
+		}
+		
+		title:c_alcaire = {
+			set_county_faith = faith:breton_cult
+			set_county_culture = culture:iliac
+		}
+		
+		province:208 = { set_holding_type = castle_holding add_building = castle_01 } #Glen borders evermore
+		province:223 = { set_holding_type = castle_holding add_building = castle_02} #ephesus has strategic castle
+		province:220 = { add_building = castle_02 } #Bankorai is important stronghold
+	}
+}

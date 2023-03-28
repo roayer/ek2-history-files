@@ -1,0 +1,1993 @@
+
+#House Tharn Additions 110000 dynasty
+
+abnursister_1 = {
+	name = "Septima" #Duke of Cheydinhal fictional daughter (Warlords?)
+	female = yes
+	dynasty = 110000
+	religion = imperial_cult
+	culture = heartlander
+	sexuality = homosexual
+	father = tharn_99
+	trait = education_stewardship_3
+	trait = intellect_good_1
+	trait = beauty_good_1
+	trait = education_magical_ability_3
+	trait = arcana_good_3
+	trait = diligent
+	trait = just
+	trait = patient
+	trait = battlemage
+	trait = disinherited
+	diplomacy = 7
+	martial = 5
+	stewardship = 8
+	intrigue = 7
+	learning = 5
+	
+	3341.1.1 = { birth = yes
+		effect = {	
+			add_perk = conjuration_novice_perk
+			add_perk = conjuration_apprentice_perk
+			add_perk = conjuration_journeyman_perk
+			add_perk = conjuration_expert_perk
+			add_perk = conjuration_master_perk
+		}
+		effect = {
+			add_trait = lifespan_1
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_0
+			}
+	}
+	3360.1.1 = { give_nickname = nick_the_enchantress }
+	3361.1.1 = { add_pressed_claim = title:d_cheydinhal }
+	3361.2.1 = { add_pressed_claim = title:c_cheydinhal }
+	3455.1.1 = {
+		death = yes
+	}
+	dna = tharnhotsister_dna_entry
+}	
+
+
+	
+lineoftormale = {
+	name = "Brazollus"
+	religion = imperial_cult
+	culture = colovian
+	dynasty_house = cyrodiil_tor
+	father = tor_900
+	trait = dragonblood
+	trait = line_of_x
+	disallow_random_traits = yes
+	
+	2930.4.2 = { birth = yes }
+	3200.1.1 = { give_nickname = nick_line_of }
+	3300.1.1 = { 
+		death = {
+			death_reason = death_defenestration_killer
+			killer = akavir_99
+		}
+	}
+}
+
+lineoftormale1 = {
+	name = "Reman"
+	religion = imperial_cult
+	culture = colovian
+	dynasty_house = cyrodiil_tor
+	father = lineoftormale
+	trait = dragonblood
+	
+	3249.1.2 = { birth = yes }
+	3315.1.1 = { 
+		death = {
+			death_reason = death_murder_known
+			killer = akavir_100
+		}
+	}
+}
+
+lineoftormale2 = {
+	name = "Amiel"
+	religion = imperial_cult
+	culture = colovian
+	dynasty_house = cyrodiil_tor
+	father = lineoftormale1
+	trait = dragonblood
+	trait = intellect_good_2
+	
+	3279.1.2 = { birth = yes }
+	3315.1.1 = { 
+		death = {
+			death_reason = death_murder_known
+			killer = akavir_100
+		}
+	}
+}
+
+lineoftormale3 = {
+	name = "Brazollus"
+	religion = imperial_cult
+	culture = colovian
+	dynasty_house = cyrodiil_tor
+	father = lineoftormale2
+	trait = dragonblood
+	trait = intellect_good_1
+	
+	3299.1.2 = { birth = yes }
+	3345.1.1 = { 
+		death = {
+			death_reason = death_murder_known
+			killer = akavir_100
+		}
+	}
+}
+
+	
+easteregg_jeffreyepstein = {
+	name = "Jeffrey"
+	culture = heartlander
+	religion = imperial_cult
+	
+	trait = arbitrary
+	trait = lustful
+	trait = arrogant
+	trait = sadistic
+	trait = craven
+	trait = greedy
+	trait = education_diplomacy_2
+	trait = p_dv_dibella
+	trait = rakish
+	trait = disloyal
+	trait = sign_lover
+	trait = deviant
+	trait = skooma_drinker
+	
+	diplomacy = 6
+	martial = 2
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+	prowess = 5
+	arcana = 8
+3333.1.1 = { birth = yes }
+3352.1.1 = { give_nickname = nick_the_deviant }
+3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3365.1.1 = { employer = hrol_107 }
+	4010.1.5 = { death = yes }
+	dna = epstein_dna_entry
+		portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_empty
+			custom_hair=male_hair_western_09
+		}
+	}
+}
+
+easteregg_jeffreyepstein1 = {
+	name = "Jeffrey"
+	culture = heartlander
+	religion = imperial_cult
+	
+	trait = arbitrary
+	trait = lustful
+	trait = arrogant
+	trait = sadistic
+	trait = craven
+	trait = greedy
+	trait = education_diplomacy_2
+	trait = p_dv_dibella
+	trait = rakish
+	trait = disloyal
+	trait = sign_lover
+	trait = deviant
+	trait = skooma_drinker
+	
+	diplomacy = 6
+	martial = 2
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+	prowess = 5
+	arcana = 8
+3433.1.1 = { birth = yes }
+3452.1.1 = { give_nickname = nick_the_deviant }
+3453.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3365.1.1 = { employer = tharn_abnur }
+	3510.1.5 = { death = yes }
+	dna = epstein_dna_entry
+		portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_empty
+			custom_hair=male_hair_western_09
+		}
+	}
+}
+
+rielle_easteregg = {
+	name = "Sebastien" #heh
+	dynasty = 400003
+	religion = breton_cult
+	culture = glenumbran
+	father = rielle_998
+
+	trait = organizer
+	trait = battlemage
+	trait = brave
+	trait = ambitious
+	trait = generous
+	trait = deceitful
+	trait = strong
+	trait = education_diplomacy_2
+	trait = blademaster_1
+
+	3327.1.1 = { birth = yes }
+	3353.1.1 = {
+			set_relation_rival = {
+				target = character:rielle_1000
+				reason = rival_lands_stolen
+				}
+			}
+	3355.6.9 = { give_nickname = nick_the_quarreller }
+	3365.1.1 = { employer = gardner_1000 }
+	3366.1.15 = { 
+			set_relation_friend = {
+			target = character:gardner_1001
+			reason = friend_drinking_buddies
+			}
+		}
+	3420.1.1 = { death = yes }
+}
+
+shittyeasteregg1 = {
+	name = "Dickon"
+	culture = glenumbran
+	religion = imperial_cult
+	
+	trait = callous
+	trait = lustful
+	trait = lazy
+	trait = education_stewardship_3
+	trait = rakish
+	trait = disloyal
+	trait = drunkard
+	trait = skooma_drinker
+	trait = sign_lover
+	trait = eunuch
+	
+3333.1.1 = { birth = yes }
+3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3365.1.1 = { employer = hrol_107 }
+3369.1.1 = { 
+		set_relation_nemesis =  {
+			target = character:easteregg_remandev
+			reason = rival_house_feud_castrated
+			}
+		}
+	3402.1.5 = { death = yes }
+	}
+shittyeasteregg2 = {
+	name = "Antoine"
+	culture = glenumbran
+	religion = imperial_cult
+	
+	trait = gluttonous
+	trait = chaste
+	trait = patient
+	trait = education_learning_3
+	trait = comfort_eater
+	trait = order_member
+	trait = diplomat
+	trait = drunkard
+	trait = blademaster_1
+	trait = sign_mage
+	
+3333.1.1 = { birth = yes }
+3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3365.1.1 = { employer = hrol_107 }
+3369.1.1 = { 
+		set_relation_nemesis =  {
+			target = character:easteregg_remandev
+			reason = nemesis_excrement
+			}
+		}
+	3402.1.5 = { death = yes }
+	}
+shittyeasteregg3 = {
+	name = "Karen"
+	culture = westholder
+	religion = imperial_cult
+	female = yes
+	
+	trait = arrogant
+	trait = craven
+	trait = lazy
+	trait = impatient
+	trait = education_stewardship_1
+	trait = disloyal
+	trait = drunkard
+	trait = improvident
+	trait = comfort_eater
+	trait = sign_thief
+	
+3333.1.1 = { birth = yes }
+3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3365.1.1 = { employer = hrol_107 }
+3369.1.1 = { 
+		set_relation_rival =  {
+			target = character:easteregg_remandev
+			reason = rival_called_out_sin
+			}
+		}
+	3412.1.5 = { death = yes }
+	}
+
+shittyeasteregg4 = {
+	name = "Hercules"
+	culture = forebear
+	religion = redguard_cult
+	
+	trait = brave
+	trait = diligent
+	trait = gregarious
+	trait = loyal
+	trait = education_martial_3
+	trait = strong
+	trait = physique_good_3
+	trait = education_martial_prowess_4
+	trait = athletic
+	trait = sign_lord
+	
+3335.1.1 = { birth = yes }
+3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3365.1.1 = { employer = bergama_1000 }
+3369.1.1 = { 
+		set_relation_rival =  {
+			target = character:easteregg_remandev
+			reason = rival_accused_of_perversion
+			}
+		}
+	3432.1.5 = { death = yes }
+	}
+
+shittyeasteregg5 = {
+	name = "Liza"
+	culture = northmen
+	religion = breton_cult
+	female = yes
+	trait = brave
+	trait = diligent
+	trait = loyal
+	trait = education_stewardship_4
+	trait = intellect_good_2
+	trait = arcana_good_3
+	trait = education_magical_ability_3
+	trait = athletic
+	trait = sign_mage
+	
+	3342.1.1 = { birth = yes }
+	3359.5.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3359.8.1 = { employer = dorell_1000 }
+	3432.1.5 = { death = yes }
+	}
+
+shittyeasteregg6 = {
+	name = "Victoria"
+	culture = heartlander
+	religion = imperial_cult
+	female = yes
+	trait = brave
+	trait = patient
+	trait = education_stewardship_4
+	trait = intellect_good_3
+	trait = arcana_good_2
+	trait = education_magical_ability_4
+	trait = sign_lover
+	
+	diplomacy = 4
+	martial = 5
+	stewardship = 8
+	intrigue = 6
+	learning = 5
+	prowess = 10
+	
+	3343.1.1 = { birth = yes }
+	3359.5.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3359.8.1 = { employer = cuptor_99 }
+	3432.1.5 = { death = yes }
+	}
+
+shittyeasteregg7 = {
+	name = "Lurgush"
+	religion = code_of_malacath
+	culture = mountain_orc
+	female = yes
+	trait = brave
+	trait = patient
+	trait = education_stewardship_3
+	trait = physique_good_3
+	trait = beauty_good_3
+	trait = blademaster_2
+	trait = sign_lord
+	
+	diplomacy = 8
+	martial = 8
+	stewardship = 12
+	intrigue = 6
+	learning = 7
+	prowess = 10
+	
+	3343.1.1 = { birth = yes }
+	3359.5.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3359.8.1 = { employer = yashnag_100 }
+	3432.1.5 = { death = yes }
+	}
+
+shittyeasteregg8 = {
+	name = "Antoine"
+	culture = iliac
+	religion = breton_cult
+	
+	trait = gluttonous
+	trait = chaste
+	trait = patient
+	trait = education_learning_3
+	trait = comfort_eater
+	trait = order_member
+	trait = diplomat
+	trait = drunkard
+	trait = blademaster_1
+	trait = sign_mage
+	
+3433.1.1 = { birth = yes }
+3453.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+3490.1.1 = { death = yes }
+}
+	
+###amusing stuff 
+
+donny_trumpeasteregg = {
+	name = "Donald"
+	culture = heartlander
+	religion = imperial_cult
+	sexuality = heterosexual
+	
+	trait = ambitious
+	trait = stubborn
+	trait = arrogant
+	trait = callous
+	trait = stubborn
+	trait = diligent
+	trait = education_stewardship_3
+	trait = shrewd
+	trait = education_martial_prowess_4
+	trait = heresiarch
+	trait = reckless
+	trait = aggressive_attacker
+	trait = sign_tower
+	disallow_random_traits = yes
+	
+	diplomacy = 2
+	martial = 4
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 5
+	
+	3325.6.14 = { birth = yes }
+	3340.1.1 = { give_nickname = nick_god_among_men }
+	3356.1.1 = {
+		effect = {
+			add_prestige_level = 3
+		}
+	}
+	3358.1.1 = { 
+		set_relation_rival =  {
+			target = character:joey_bideneasteregg
+			reason = rival_defrauded_realm
+			}
+		}
+	3359.1.1 = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } }
+	3365.1.1 = { employer = lex_caius }
+	3369.1.1 = { set_relation_nemesis =  {
+			target = character:joey_bideneasteregg
+			reason = nemesis_excrement_corresponding }
+			}
+	3420.1.1 = { death = yes }
+	dna = trump_dna_entry
+			portrait_override={
+			portrait_modifier_overrides={
+			custom_hair=male_hair_western_09
+			custom_beards=male_empty
+		}
+	}
+	}
+donny_trumpeasteregg1 = {
+	name = "Donald"
+	culture = heartlander
+	religion = imperial_cult
+	sexuality = heterosexual
+	
+	trait = ambitious
+	trait = stubborn
+	trait = arrogant
+	trait = callous
+	trait = stubborn
+	trait = diligent
+	trait = education_stewardship_3
+	trait = shrewd
+	trait = education_martial_prowess_4
+	trait = heresiarch
+	trait = reckless
+	trait = aggressive_attacker
+	trait = sign_tower
+	disallow_random_traits = yes
+	
+	diplomacy = 2
+	martial = 4
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 5
+	
+	3420.6.14 = { birth = yes }
+	3440.1.1 = { give_nickname = nick_god_among_men }
+	3456.1.1 = {
+		effect = {
+			add_prestige_level = 3
+		}
+	}
+	3458.1.1 = { 
+		set_relation_rival =  {
+			target = character:joey_bideneasteregg1
+			reason = rival_defrauded_realm
+			}
+		}
+	3459.1.1 = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } }
+	3460.1.1 = { set_relation_nemesis =  {
+			target = character:joey_bideneasteregg1
+			reason = nemesis_excrement_corresponding }
+			}
+	3520.1.1 = { death = yes }
+	dna = trump_dna_entry
+			portrait_override={
+			portrait_modifier_overrides={
+			custom_hair=male_hair_western_09
+			custom_beards=male_empty
+		}
+	}
+	}
+donny_trumpeasteregg2 = {
+	name = "Donald John"
+	culture = northmen
+	religion = breton_cult
+	sexuality = heterosexual
+	
+	trait = ambitious
+	trait = stubborn
+	trait = arrogant
+	trait = callous
+	trait = stubborn
+	trait = diligent
+	trait = education_stewardship_3
+	trait = shrewd
+	trait = education_martial_prowess_4
+	trait = heresiarch
+	trait = reckless
+	trait = aggressive_attacker
+	trait = sign_tower
+	disallow_random_traits = yes
+	
+	diplomacy = 2
+	martial = 4
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 5
+	
+	3420.6.14 = { birth = yes }
+	3440.1.1 = { give_nickname = nick_god_among_men }
+	3456.1.1 = {
+		effect = {
+			add_prestige_level = 2
+		}
+	}
+	3458.1.1 = { 
+		set_relation_rival =  {
+			target = character:joey_bideneasteregg2
+			reason = rival_defrauded_realm
+			}
+		}
+	3459.1.1 = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } }
+	3460.1.1 = { set_relation_nemesis =  {
+			target = character:joey_bideneasteregg2
+			reason = nemesis_excrement_corresponding }
+			}
+	3520.1.1 = { death = yes }
+	dna = trump_dna_entry
+			portrait_override={
+			portrait_modifier_overrides={
+			custom_hair=male_hair_western_09
+			custom_beards=male_empty
+		}
+	}
+	}
+	
+joey_bideneasteregg = {
+	name = "Joe"
+	culture = colovian
+	religion = imperial_cult
+	sexuality = heterosexual
+	
+	trait = greedy
+	trait = deceitful
+	trait = callous
+	trait = fickle
+	trait = stubborn
+	trait = arrogant
+	trait = education_stewardship_1
+	trait = disloyal
+	trait = infirm
+	trait = dementia
+	trait = profligate
+	trait = reckless
+	trait = irritable
+	trait = arcana_bad_1
+	trait = plunderer
+	trait = reclusive
+	trait = sign_thief
+	disallow_random_traits = yes
+	
+	diplomacy = 15
+	martial = 5
+	stewardship = 7
+	intrigue = 3
+	learning = 5
+	prowess = 10
+	
+	3315.10.20 = { birth = yes }
+	3340.1.1 = { give_nickname = nick_the_dreadful_ruler }	
+	3358.1.1 = { 
+		set_relation_rival =  {
+			target = character:donny_trumpeasteregg
+			reason = rival_defrauded_realm_corresponding
+			}
+		}
+	3359.1.1 = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } }
+	3365.1.1 = { employer = bjorga_10600 }
+	3420.1.1 = { death = yes }
+	dna = bideneasteregg_dna_entry
+		portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_09
+			custom_beards=male_empty
+		}
+	}
+	}
+joey_bideneasteregg1 = {
+	name = "Joe"
+	culture = colovian
+	religion = imperial_cult
+	sexuality = heterosexual
+	
+	trait = greedy
+	trait = deceitful
+	trait = callous
+	trait = fickle
+	trait = stubborn
+	trait = arrogant
+	trait = education_stewardship_1
+	trait = disloyal
+	trait = infirm
+	trait = dementia
+	trait = profligate
+	trait = reckless
+	trait = irritable
+	trait = arcana_bad_1
+	trait = plunderer
+	trait = reclusive
+	trait = sign_thief
+	disallow_random_traits = yes
+	
+	diplomacy = 15
+	martial = 5
+	stewardship = 7
+	intrigue = 3
+	learning = 5
+	prowess = 10
+	
+	3405.10.20 = { birth = yes }
+	3440.1.1 = { give_nickname = nick_the_dreadful_ruler }	
+	3458.1.1 = { 
+		set_relation_rival =  {
+			target = character:donny_trumpeasteregg1
+			reason = rival_defrauded_realm_corresponding
+			}
+		}
+	3459.1.1 = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } }
+	3520.1.1 = { death = yes }
+	dna = bideneasteregg_dna_entry
+		portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_09
+			custom_beards=male_empty
+		}
+	}
+	}
+
+joey_bideneasteregg2 = {
+	name = "Joseph Robinette"
+	culture = iliac
+	religion = breton_cult
+	sexuality = heterosexual
+	
+	trait = greedy
+	trait = deceitful
+	trait = callous
+	trait = fickle
+	trait = stubborn
+	trait = arrogant
+	trait = education_stewardship_1
+	trait = disloyal
+	trait = infirm
+	trait = dementia
+	trait = profligate
+	trait = reckless
+	trait = irritable
+	trait = arcana_bad_1
+	trait = plunderer
+	trait = reclusive
+	trait = sign_thief
+	disallow_random_traits = yes
+	
+	diplomacy = 15
+	martial = 5
+	stewardship = 7
+	intrigue = 3
+	learning = 5
+	prowess = 10
+	
+	3405.10.20 = { birth = yes }
+	3440.1.1 = { give_nickname = nick_the_dreadful_ruler }	
+	3458.1.1 = { 
+		set_relation_rival =  {
+			target = character:donny_trumpeasteregg2
+			reason = rival_defrauded_realm_corresponding
+			}
+		}
+	3459.1.1 = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } }
+	3520.1.1 = { death = yes }
+	dna = bideneasteregg_dna_entry
+		portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_09
+			custom_beards=male_empty
+		}
+	}
+	}
+	
+
+kvinchal_easteregg1 = {
+	name = "Fortunata" #Duke of Linchal sister ( Interregnum )
+	female = yes
+	dynasty = kvinchal
+	religion = imperial_cult
+	culture = colovian
+	father = kvinchal_6249
+	trait = education_stewardship_3
+	trait = physique_good_2
+	trait = disinherited
+
+	3344.1.1 = { birth = yes }
+	3445.1.1 = { death = yes }
+}
+
+aquilarios_easteregg1 = {
+	name = "Lucia"
+	female = yes
+	dynasty = aquilarios
+	religion = imperial_cult
+	culture = colovian
+	father = aquilarios_995
+	trait = disinherited
+	trait = beauty_good_2
+
+	3353.1.1 = { birth = yes }
+	3361.1.1 = { add_pressed_claim = title:d_chorrol }
+	3361.2.1 = { add_pressed_claim = title:c_chorrol }
+	3434.1.1 = { death = yes }
+}
+
+larich_easteregg1 = {
+	name = "Ysabel" 
+	female = yes
+	dynasty = 100001
+	religion = imperial_cult
+	culture = colovian
+	father = larich_102_2
+	trait = disinherited
+
+	3356.1.1 = { birth = yes }
+	3408.1.1 = { death = yes }
+}
+
+###Breton additions####
+
+deleyn_easteregg1 = {
+	name = "Donel" #additions
+	dynasty = 400001
+	religion = breton_cult
+	culture = glenumbran
+	sexuality = heterosexual
+	trait = diligent
+	trait = strong
+	trait = education_magical_ability_2
+	trait = arcana_good_2
+	
+	father = deleyn_998
+	mother = garclay_997
+
+	3319.1.1 = { birth = yes }
+	3350.1.1 = { set_relation_rival = { reason = rival_historical target = character:seamount_999 } }
+	3356.1.1 = {
+		effect = {
+			add_prestige_level = 2
+		}
+	}
+	3399.1.1 = { death = yes }
+}
+
+copperfield_remaneasteregg1 = {
+	name = "Armaund"
+	dynasty = 400020
+	religion = breton_cult
+	culture = glenumbran
+	trait = beauty_good_1
+	mother = copperfield_998
+
+	3340.1.1 = { birth = yes }
+	3350.1.1 = { set_relation_rival = { reason = rival_historical target = character:seamount_999 } }
+	3433.1.1 = { death = yes }
+}
+
+guimard_remaneasteregg1 = {
+	name = "Edwyle"
+	dynasty = 430000
+	culture = iliac
+	religion = breton_cult
+	trait = sign_mage
+	trait = lustful
+	trait = physique_good_3
+	sexuality = heterosexual
+
+	father = guimard_1000
+
+	3335.1.1 = { birth = yes }
+	3431.1.1 = { death = yes }
+}
+
+woodborne_remaneasteregg1 = {
+	name = "Arthur"
+	dynasty_house = gardner_woodborne
+	religion = breton_cult
+	culture = iliac
+	trait = arcana_good_2
+	trait = gallant
+	
+	father = woodborne_1000c
+
+	3295.1.1 = { birth = yes }
+	3369.1.1 = { death = yes }
+}
+
+woodborne_remaneasteregg2 = {
+	name = "Arthur"
+	dynasty_house = gardner_woodborne
+	religion = breton_cult
+	culture = iliac
+	trait = arcana_good_2
+	trait = brave
+	
+	father = woodborne_remaneasteregg1
+
+	3335.1.1 = { birth = yes }
+	3409.1.1 = { death = yes }
+}
+
+deleyn_eastereggline = {
+	name = "Felyx"
+	dynasty = 400001
+	religion = breton_cult
+	culture = glenumbran
+	trait = line_of_x
+	disallow_random_traits = yes
+
+	father = deleyn_991
+
+	3144.1.1 = { birth = yes }
+	3155.1.1 = { give_nickname = nick_line_of }
+	3300.1.1 = { death = yes }
+}
+
+deleyn_easteregg2 = {
+	name = "Anton" #additions
+	dynasty = 400001
+	religion = breton_cult
+	culture = glenumbran
+	sexuality = heterosexual
+	trait = brave
+	trait = arcana_good_2
+	
+	father = deleyn_eastereggline
+
+	3299.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+
+deleyn_easteregg3 = {
+	name = "Lysandrus" #additions
+	dynasty = 400001
+	religion = breton_cult
+	culture = glenumbran
+	sexuality = heterosexual
+	trait = brave
+	trait = education_magical_ability_3
+	trait = arcana_good_2
+	trait = physique_good_1
+	trait = battlemage
+	
+	father = deleyn_easteregg2
+	mother = gulitte_remaneasteregg1
+	
+	3347.1.1 = { birth = yes 
+		effect = {	
+			add_perk = conjuration_novice_perk
+			add_perk = conjuration_apprentice_perk
+			add_perk = conjuration_journeyman_perk
+			add_perk = conjuration_expert_perk
+			add_perk = conjuration_master_perk
+		} }
+	3355.1.1 = { employer = deleyn_999 }
+	3359.1.1 = { add_pressed_claim = title:d_daenia }
+	3359.2.1 = { add_pressed_claim = title:c_daenia }
+	3365.1.1 = { employer = deleyn_1000 }
+	3438.1.1 = { death = yes }
+}
+
+deleyn_easteregg4 = {
+	name = "Lysa" #additions
+	female = yes
+	dynasty = 400001
+	religion = breton_cult
+	culture = glenumbran
+	sexuality = heterosexual
+	trait = arcana_good_1
+	trait = beauty_good_2
+	
+	father = deleyn_easteregg2
+	mother = gulitte_remaneasteregg1
+	
+	3349.1.1 = { birth = yes  }
+	3359.1.1 = { add_pressed_claim = title:d_daenia }
+	3359.2.1 = { add_pressed_claim = title:c_daenia }
+	3365.1.1 = { employer = deleyn_1000 }
+	3438.1.1 = { death = yes }
+}
+
+gulitte_remaneasteregg1 = {
+	name = "Evelyssa"
+	dynasty = 400019
+	religion = breton_cult
+	culture = glenumbran
+	female = yes
+	
+	father = gulitte_999
+
+	3331.1.1 = { birth = yes }
+	3359.1.1 = { death = yes }
+}
+
+vuitton_remaneasteregg1 = {
+	name = "Melisandre"
+	dynasty_house = guimard_vuitton
+	religion = breton_cult
+	culture = iliac
+	female = yes
+	
+	father = vuitton_1001
+	trait = diligent
+	trait = architect
+	trait = intellect_good_2
+	trait = twin
+	stewardship = 10
+	
+	3353.1.1 = { birth = yes }
+	3362.1.1 = { employer = moile_1000 }
+	3436.1.1 = { death = yes }
+}
+
+vuitton_remaneasteregg2 = {
+	name = "Louis"
+	dynasty_house = guimard_vuitton
+	religion = breton_cult
+	culture = iliac
+	
+	father = vuitton_1001
+	trait = diligent
+	trait = diplomat
+	trait = intellect_good_2
+	trait = twin
+	learning = 10
+	prowess = 9
+	
+	3353.1.1 = { birth = yes }
+	3362.1.1 = { employer = moile_1000 }
+	3436.1.1 = { death = yes }
+}
+
+
+direnni_eastereggline = {
+	name = "Aiden"
+	dynasty = 730000
+	religion = auriel
+	culture = balfiera
+	trait = lifespan_3
+	trait = line_of_x
+	disallow_random_traits = yes
+	
+	father = direnni_103
+	
+	610.1.1 = { birth = yes }
+	1000.1.1 = { give_nickname = nick_line_of }
+	3100.1.1 = { death = yes }
+}
+
+rilis_eastereggwife1 = {
+	name = "Irosa"
+	female = yes
+	dynasty_house = auridon_rilis
+	religion = auriel
+	culture = auridon
+	mother = rilis_28
+	
+	trait = pure_blooded
+	trait = lifespan_3
+	
+	2933.1.1 = { birth = yes }
+	3155.1.1 = { death = yes }
+}
+
+direnni_remaneasteregg1 = {
+	name = "Anduril"
+	dynasty = 730000
+	religion = mainland_auriel
+	culture = balfiera
+	sexuality = heterosexual
+	trait = lifespan_4
+	trait = pure_blooded
+	trait = education_magical_ability_3
+	trait = arcana_good_3
+	trait = scholar
+	trait = family_first
+	trait = battlemage
+	trait = cynical
+	trait = education_stewardship_4
+	mother = rilis_eastereggwife1
+	father = direnni_eastereggline
+	
+	3098.1.1 = { birth = yes }
+	3350.1.1 = { add_matrilineal_spouse = direnni_1003 
+		effect = {
+			learn_language = language_bretic
+			add_perk = conjuration_novice_perk
+			add_perk = conjuration_apprentice_perk
+			add_perk = conjuration_journeyman_perk
+			add_perk = conjuration_expert_perk
+			add_perk = conjuration_master_perk
+			}
+		}
+	3356.1.1 = {
+		effect = {
+			add_prestige_level = 3
+			add_piety_level = 2
+		}
+	}
+	3440.1.1 = { death = yes }
+}
+
+
+
+
+easteregg_remandev = {
+	name = "Brutus"
+	dynasty = tor_900
+	culture = heartlander
+	religion = imperial_cult
+	father = lineoftormale3
+	
+	trait = beauty_bad_3
+	trait = physique_bad_3
+	trait = arcana_good_3
+	trait = beserker
+	trait = arbitrary
+	trait = shrewd
+	trait = greedy
+	trait = arrogant
+	trait = callous
+	trait = blademaster_3
+	trait = lazy
+	trait = vengeful
+	trait = education_magical_ability_3
+	trait = impotent
+	trait = lustful
+	trait = education_stewardship_2
+	trait = scholar
+	trait = plunderer
+	trait = p_dv_dibella
+	trait = gluttous
+	trait = rakish
+	trait = disloyal
+	trait = skooma_drinker
+	trait = sign_lover
+	trait = hashishiya
+	trait = deviant
+	trait = drunkard
+	trait = dragonblood
+	diplomacy = 12
+	martial = 7
+	stewardship = 11
+	intrigue = 2
+	learning = 4
+	prowess = 6
+	arcana = 8
+3333.1.1 = { birth = yes }
+3352.1.1 = { give_nickname = nick_the_oathbreaker }
+3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3365.1.1 = { employer = hrol_107 }
+	4010.1.5 = { death = yes }
+	}
+
+easteregg_septimfounder = {
+	name = "Valdr"
+	dynasty = 2 #Septim
+	culture = atmoran
+	religion = imperial_cult
+	
+	trait = beserker
+	trait = brave
+	trait = ambitious
+	trait = diligent
+	trait = blademaster_3
+	trait = varangian
+	trait = vengeful
+	trait = strong
+	trait = education_martial_3
+	diplomacy = 6
+	martial = 6
+	stewardship = 9
+	intrigue = 4
+	learning = 6
+	prowess = 5
+	
+	3335.1.1 = { birth = yes }
+	3351.1.1 = { give_nickname = nick_true_steel }
+	3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3356.1.1 = {
+		effect = {
+			add_prestige_level = 2
+		}
+	}
+	3365.1.1 = { employer = hrol_107 }
+	3365.1.15 = { 
+			set_relation_friend = {
+			target = character:hrol_107
+			reason = friend_saved_life_together
+		}
+	}
+	3433.1.5 = { death = yes }
+	}
+
+bloodtusk_remaneasteregg1 = {
+	name = "Arakaul"
+	dynasty = 800010
+	religion = code_of_malacath
+	culture = mountain_orc
+
+	father = bloodtusk_101a
+	
+	trait = brave
+	trait = diligent
+	trait = fickle
+
+	trait = blademaster_3
+	trait = gallant
+	trait = adventurer
+	
+	
+	3335.1.1 = { birth = yes }
+	3356.1.1 = {
+		effect = { #blood relative of Bloodtusk through his brother, Rokaug
+			add_prestige_level = 2
+		}
+	}
+
+	3360.1.1 = { employer = fharun_1000 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3387.1.1 = { death = yes }
+}
+
+bagrakh_remaneasteregg1 = {
+	name = "Torug"
+	dynasty = 800020
+	culture = mountain_orc
+	religion = code_of_malacath
+	trait = physique_good_3
+	trait = blademaster_1
+	trait = torturer
+	trait = education_martial_prowess_3
+	father = bagrakh_999
+	
+	3341.1.1 = { birth = yes }
+	3359.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3397.7.1 = { death = { death_reason = death_battle } }
+}
+
+bagrakh_remaneasteregg2 = {
+	name = "Rogag"
+	dynasty = 800020
+	culture = mountain_orc
+	religion = code_of_malacath
+	female = yes
+	trait = seducer
+	trait = beauty_good_2
+	trait = lustful
+	father = bagrakh_999
+	
+	3343.1.1 = { birth = yes }
+	3359.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3397.7.1 = { death = { death_reason = death_battle } }
+}
+
+orc_remaneasteregg1 = {
+	name = "Aggronak"
+	dynasty = 800011
+	culture = mountain_orc
+	religion = malacath_brutal_breed
+
+	trait = zealous
+	trait = vengeful
+	trait = patient
+	trait = brave
+	trait = mystic_2
+	trait = blademaster_2
+
+	trait = education_stewardship_3
+	trait = gallant
+	trait = adventurer
+	disallow_random_traits = yes
+	
+	3338.1.1 = { birth = yes }
+	3355.1.1 = { give_nickname = nick_the_brave }
+	3356.1.1 = {
+		effect = { #wandering knight
+			add_prestige_level = 2
+		}
+		add_pressed_claim = title:d_shipwreck_coast
+		add_pressed_claim = title:c_shipwreck_coast
+	}
+
+	3360.1.1 = { employer = bagrakh_1001 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3391.1.1 = { death = yes }
+}
+
+golzarga_remaneasteregg1 = {
+	name = "Mogrul"
+	dynasty = golzarga
+	religion = code_of_malacath
+	culture = mountain_orc
+	sexuality = heterosexual
+	trait = twin
+	trait = blademaster_2
+	trait = vengeful
+	trait = greedy
+	trait = ambitious
+	
+	prowess = 8
+	diplomacy = 8
+	
+	father = golzarga_101
+	
+	3345.1.1 = { birth = yes }
+	3363.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3422.1.1 = { death = yes }
+}
+
+anequina_remaneasteregg1 = {
+    name = "Kharjo"
+	dynasty = 1110000
+	culture = anequinan
+	religion = twomoonsdance
+
+	father = anequina_002
+	mother = pelletine_001
+
+	3225.1.1 = { birth = yes }
+	3322.1.1 = { death = yes }
+}
+
+anequina_remaneasteregg2 = {
+    name = "Inigo"
+	dynasty = 1110000
+	culture = anequinan
+	religion = twomoonsdance
+
+	father = anequina_remaneasteregg1
+	
+
+	3285.1.1 = { birth = yes }
+	3342.1.1 = { death = yes }
+}
+
+anequina_remaneasteregg3 = {
+    name = "Darloc"
+	dynasty = 1110000
+	culture = anequinan
+	religion = twomoonsdance
+
+	father = anequina_remaneasteregg2
+	
+
+	3315.1.1 = { birth = yes }
+	3359.1.1 = { death = yes }
+}
+
+anequina_remaneasteregg4 = {
+    name = "Keirgo"
+	dynasty = 1110000
+	culture = anequinan
+	religion = twomoonsdance
+	trait = furstock_pahmar_raht
+	trait = education_magical_ability_3
+	trait = diligent
+	trait = blademaster_3
+	trait = physique_good_2
+	
+	father = anequina_remaneasteregg3
+	
+
+	3342.1.1 = { birth = yes }
+	3419.1.1 = { death = yes }
+}
+
+shabu_remaneasteregg1 = {
+	name = "Fimaz_ra"
+	dynasty = 1110016
+	culture = anequinan
+	religion = twomoonsdance
+	father = shabu_003
+	trait = furstock_pahmar_raht
+	trait = lustful
+
+	3299.1.1 = { birth = yes }
+	3372.1.1 = { death = yes }
+}
+
+###special easteregg lines
+
+ysgramoor_remaneasteregg1 = {
+	name = "Olmgerd" # Last of the Ysgamoor line and High King who wore the Jagged Crown. Followed the teachings of Alessia
+	dynasty = 300019 #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_103
+	trait = line_of_x
+	disallow_random_traits = yes
+	222.1.1 = { birth = yes }
+	1000.1.1 = { give_nickname = nick_line_of }
+	3258.1.1 = { death = yes }
+}
+
+ysgramoor_remaneasteregg2 = {
+	name = "Ysmir"
+	dynasty = 300019 #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_remaneasteregg1 
+	trait = bastard
+	
+	3255.1.1 = { birth = yes }
+	3328.1.1 = { death = yes }
+}
+
+ysgramoor_remaneasteregg3 = {
+	name = "Harald"
+	dynasty = 300019 #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_remaneasteregg2 
+	trait = intellect_good_1
+	
+	3300.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+
+ysgramoor_remaneasteregg4 = {
+	name = "Ysgramoor"
+	dynasty = 300019 #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_remaneasteregg3
+	trait = strong
+	
+	3333.1.1 = { birth = yes }
+	3358.1.1 = { 
+			give_nickname = nick_the_strong 
+		}
+	3398.1.1 = { death = yes }
+}
+
+##reach stuff
+
+lineoffaolaneasteregg = {
+	name = "Faolan"
+	religion = old_gods
+	culture = reachfolk
+	dynasty_house = dyn_faolan
+	father = faolan
+	trait = line_of_x
+	disallow_random_traits = yes
+	
+	1030.4.2 = { birth = yes }
+	3100.1.1 = { give_nickname = nick_line_of }
+	3250.1.1 = { death = yes }
+}
+
+faolan_remaneasteregg1 = {
+	name = "Durcorach"
+	dynasty = dyn_faolan
+	religion = old_gods
+	culture = reachfolk
+	father = lineoffaolaneasteregg
+	trait = intellect_good_2
+	
+	3243.1.1 = { birth = yes }
+	3278.1.1 = { 
+			give_nickname = nick_the_wise 
+		}
+	3318.1.1 = { death = yes }
+}
+
+faolan_remaneasteregg2 = {
+	name = "Faolan"
+	dynasty = dyn_faolan
+	religion = old_gods
+	culture = reachfolk
+	father = faolan_remaneasteregg1
+	trait = intellect_good_1
+	trait = vengeful
+	trait = wrathful
+	trait = arcana_good_2
+	
+	3293.1.1 = { birth = yes }
+	3318.1.1 = { 
+			give_nickname = nick_the_brash 
+		}
+	3361.1.1 = { death = yes }
+}
+
+faolan_remaneasteregg3 = {
+	name = "Faolan"
+	dynasty = dyn_faolan
+	religion = old_gods
+	culture = reachfolk
+	father = faolan_remaneasteregg2
+	trait = intellect_good_2
+	trait = diligent
+	trait = wrathful
+	trait = arcana_good_2
+	trait = blademaster_2
+	3337.1.1 = { birth = yes }
+	3359.1.1 = { add_pressed_claim = title:d_markarth }
+	3359.2.1 = { add_pressed_claim = title:c_markarth }
+	3365.1.1 = { employer = blackdrake_99 }
+	3441.1.1 = { death = yes }
+}
+
+faolon_remaneasteregg4 = {
+	name = "Faola"
+	female = yes
+	dynasty = dyn_faolan
+	religion = old_gods
+	culture = reachfolk
+	father = faolan_remaneasteregg2
+	trait = intellect_good_1
+	trait = diligent
+	trait = brave
+	trait = arcana_good_1
+	trait = beauty_good_2
+	trait = necromancer
+	
+	3344.1.1 = { birth = yes 
+		effect = {	
+			add_perk = conjuration_novice_perk
+			add_perk = conjuration_apprentice_perk
+			add_perk = conjuration_journeyman_perk
+			add_perk = conjuration_expert_perk
+			add_perk = conjuration_master_perk
+		}
+		}
+		3359.1.1 = { add_pressed_claim = title:d_markarth }
+	3359.2.1 = { add_pressed_claim = title:c_markarth }
+	3365.1.1 = { employer = reachbreaker_105 }
+	3441.1.1 = { death = yes }
+}
+
+blackdrake_remaneasteregg1 = {
+	name = "Drucilla" 
+	dynasty = 500004
+	female = yes
+	culture = reachfolk
+	religion = old_gods
+	trait = physique_good_2
+	trait = patient
+	trait = necromancer
+	
+	3345.1.1 = { birth = yes }
+	3422.1.1 = { death = yes }
+}
+
+winterborn_remaneasteregg1 = {
+	name = "Merc"
+	dynasty = 500022
+	culture = reachfolk
+	religion = malacath_coven
+	trait = strategist
+	trait = strong
+	
+	father = winterborn_999
+	
+	3337.1.1 = { birth = yes }
+	3359.1.1 = {
+		set_relation_rival = { reason = rival_historical target = character:faolon_remaneasteregg3 }
+	}
+	3359.2.1 = { 
+		set_relation_friend =  {
+			target = character:winterborn_1000
+			reason = friend_drinking_buddies
+			}
+		}
+	3397.1.1 = { death = yes }
+}
+
+akavir_remaneasteregg1 = {
+	name = "Qinierius" #Tsaesci Potentate distant heir
+	dynasty = dyn_akavir #Of Akaviri
+	religion = court_dawnbeauty
+	culture = ilniviri
+	father = akavir_99
+	trait = education_diplomacy_3
+	trait = tsaesci_4
+	trait = vengeful
+	trait = education_martial_prowess_2
+	
+	3160.6.17 = {
+		birth = yes
+	}
+	3359.1.1 = { 
+		set_relation_friend =  {
+			target = character:tideholm_001
+			reason = friend_drinking_buddies
+			}
+		}
+	3365.1.1 = { 
+			effect = {
+			add_trait = adventurer
+			add_trait = blademaster_2
+			add_trait = pirate
+			remove_trait = education_martial_prowess_2
+			add_trait = education_martial_prowess_3
+			add_prestige_level = 1
+			add_gold = 600
+			spawn_army = {  men_at_arms = { type = abecean_pirates men = 400 } location = capital_province }
+			}
+		}
+	3369.1.1 = { 
+		set_relation_nemesis =  {
+			target = character:easteregg_remandev
+			reason = nemesis_excrement
+			}
+		}
+	3390.12.18 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+	portrait_override={
+			portrait_modifier_overrides=  {
+				custom_hair=male_hair_fp1_02
+				custom_beards=male_beard_steppe_01
+			}
+		}
+}
+
+seamount_easteregg1 = {
+	name = "Grog"
+	dynasty = 800013
+	religion = code_of_malacath
+	culture = mountain_orc
+	trait = blademaster_2
+	trait = education_diplomacy_4
+	trait = vengeful
+	trait = wrathful
+	trait = brave
+	trait = adventurer
+	father = seamount_998
+	
+	3438.1.1 = { birth = yes }
+	3357.1.1 = {
+		effect = {
+			add_prestige_level = 2
+		}
+	}
+	3489.1.1 = { death = yes }
+}
+
+nisewan_easteregg1 = {
+	name = "Farasad"
+	dynasty = 210001
+	religion = redguard_cult
+	culture = forebear
+	trait = blademaster_2
+	trait = gregarious
+	trait = brave
+	trait = flexible_leader
+	trait = education_martial_prowess_4
+	trait = education_martial_3
+	trait = intellect_good_1
+	father = nisewan_999
+	
+	3321.1.1 = { birth = yes }
+	3356.1.1 = {
+		effect = {
+			add_prestige_level = 1
+		}
+	}
+	3359.1.1 = { employer = nisewan_1002 }
+	3415.1.1 = { death = yes }
+}
+
+tor_eastereggmom = {
+	name = "Livia" #Duke of Sancre Tor daughter
+	female = yes
+	dynasty_house = cyrodiil_tor
+	religion = reman_cult
+	culture = colovian
+	father = tor_910
+	trait = dragonblood
+	trait = intellect_good_2
+
+	3300.1.1 = { birth = yes }
+	3359.1.1 = { death = yes }
+}
+
+aquilarios_easteregg2 = {
+	name = "Varen"
+	dynasty = aquilarios
+	religion = imperial_cult
+	culture = colovian
+	trait = just
+	trait = patient
+	trait = education_magical_ability_3
+	trait = battlemage
+	trait = arcana_good_3
+
+	father = aquilarios_994
+
+	3320.1.1 = { birth = yes }
+	3390.1.1 = { death = yes }
+}
+###Leki 
+leki_eastereggline = {
+	name = "Makela"
+	dynasty = leki
+	religion = tall_papa
+	culture = forebear
+	trait = line_of_x
+	trait = physique_good_2
+	disallow_random_traits = yes
+	
+	mother = leki_1
+	
+	970.1.1 = { birth = yes }
+	1000.1.1 = { give_nickname = nick_line_of }
+	3258.1.1 = { death = yes }
+}
+
+leki_easteregg1 = {
+	name = "Itaf"
+	dynasty = leki
+	religion = tall_papa
+	culture = forebear
+	trait = blademaster_3
+	trait = physique_good_2
+	
+	father = leki_eastereggline
+	
+	3255.1.1 = { birth = yes }
+	3338.1.1 = { death = yes }
+}
+
+leki_easteregg2 = {
+	name = "Sai"
+	dynasty = leki
+	religion = tall_papa
+	culture = forebear
+	trait = blademaster_3
+	trait = physique_good_2
+	
+	father = leki_easteregg1
+	
+	3285.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+
+leki_easteregg3 = {
+	name = "Nazir"
+	dynasty = leki
+	religion = tall_papa
+	culture = forebear
+	trait = blademaster_3
+	trait = physique_good_2
+	
+	father = leki_easteregg2
+	
+	3315.1.1 = { birth = yes }
+	3368.1.1 = { death = yes }
+}
+
+leki_easteregg4 = {
+	name = "Rada"
+	dynasty = leki
+	religion = tall_papa
+	culture = forebear
+	trait = blademaster_3
+	trait = physique_good_3
+	trait = intellect_good_1
+	trait = beauty_good_1
+	trait = education_martial_prowess_4
+	trait = brave
+	trait = loyal
+	trait = patient
+	trait = holy_warrior
+	stewardship = 8
+	diplomacy = 8
+	intrigue = 6
+	learning = 6
+	martial = 5
+	prowess = 6
+	
+	father = leki_easteregg3
+	
+	3333.1.1 = { birth = yes }
+	3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3359.2.1 = { add_pressed_claim = title:c_kulati }
+	3365.1.1 = { employer = hegathe_1000 }
+	3438.1.1 = { death = yes }
+}
+
+leki_easteregg5 = {
+	name = "Kasura"
+	female = yes
+	dynasty = leki
+	religion = tall_papa
+	culture = forebear
+	trait = blademaster_2
+	trait = physique_good_2
+	trait = beauty_good_3
+	trait = education_martial_prowess_3
+	trait = education_martial_3
+	trait = chaste
+	trait = diligent
+	trait = just
+	trait = brave
+	trait = loyal
+	trait = shrewd
+	stewardship = 9
+	diplomacy = 4
+	intrigue = 5
+	learning = 5
+	martial = 5
+	prowess = 6
+	
+	father = leki_easteregg3
+	
+	3353.1.1 = { birth = yes }
+	3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3359.2.1 = { add_pressed_claim = title:c_kulati }
+	3365.1.1 = { employer = hegathe_1000 }
+	3438.1.1 = { death = yes }
+}
+
+leki_easteregg6 = {
+	name = "Nazir"
+	dynasty = leki
+	religion = tall_papa
+	culture = forebear
+	trait = blademaster_2
+	trait = physique_good_2
+	trait = education_martial_prowess_4
+	trait = brave
+	trait = vengeful
+	
+	father = leki_easteregg3
+	
+	3344.1.1 = { birth = yes }
+	3353.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3359.2.1 = { add_pressed_claim = title:c_kulati }
+	3365.1.1 = { employer = hegathe_1000 }
+	3438.1.1 = { death = yes }
+}
+
+
+umbranox_eastereggfounder = {
+	name = "Velanius"
+	dynasty_house = umbranox_lex 
+	culture = heartlander
+	religion = imperial_cult
+	
+	trait = deceitful
+	trait = diligent
+	trait = bastard_founder
+	trait = education_stewardship_3
+
+	sexuality = heterosexual
+
+	father = lex_caius
+	
+	3334.1.1 = { birth = yes }
+	3416.1.1 = { death = yes }
+}
+
+motierre_eastereggfounder = {
+	name = "Amaund" #heh
+	dynasty_house = motierre_rielle
+	religion = breton_cult
+	culture = glenumbran
+	father = rielle_997
+	mother = direnni_1000c
+
+	trait = arcana_good_2
+
+	3270.1.1 = { birth = yes }
+	3330.1.1 = { death = yes }
+}
+
+motierre_easteregg1 = {
+	name = "Fabre" #heh
+	dynasty_house = motierre_rielle
+	religion = breton_cult
+	culture = glenumbran
+	father = motierre_eastereggfounder
+	
+
+	trait = arcana_good_3
+
+	3300.1.1 = { birth = yes }
+	3359.1.1 = { death = yes }
+}
+
+motierre_easteregg2 = {
+	name = "Sebastian" #heh
+	dynasty_house = motierre_rielle
+	religion = breton_cult
+	culture = glenumbran
+	father = motierre_easteregg1
+	trait = diligent
+	trait = arcana_good_2
+	trait = battlemage
+	trait = greedy
+	trait = education_stewardship_3
+
+	3330.1.1 = { birth = yes }
+	3390.1.1 = { death = yes }
+}
+motierre_easteregg3 = {
+	name = "Amaund" #heh
+	dynasty_house = motierre_rielle
+	religion = breton_cult
+	culture = glenumbran
+	father = motierre_easteregg1
+	trait = patient
+	trait = arcana_good_3
+	trait = battlemage
+	trait = generous
+
+	3335.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+
+motierre_easteregg4 = {
+	name = "Sybille" #heh
+	female = yes
+	dynasty_house = motierre_rielle
+	religion = breton_cult
+	culture = glenumbran
+	father = motierre_easteregg1
+	trait = patient
+	trait = arcana_good_3
+	trait = battlemage
+	3337.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+
+###Main Character cadet Cyrodiil###
+brazildor_eastereggfounder = {
+	name = "Reman" #Count of Echo Cliffs , Northrock (Warlords & Interregnum)
+	
+	dynasty_house = cyrodiil_brazildor 
+	religion = imperial_cult
+	culture = colovian
+	diplomacy = 5
+	martial = 6
+	stewardship = 9
+	intrigue = 3
+	learning = 6
+	prowess = 6
+	father = lineoftormale3
+	mother = tor_eastereggmom
+	
+	trait = military_engineer
+	trait = sign_mage
+	trait = patient
+	trait = cynical
+	trait = wrathful
+	trait = varangian
+	trait = intellect_good_1
+	trait = battlemage
+	trait = education_magical_ability_2
+	trait = education_martial_3
+	trait = dragonblood
+
+	3325.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+	dna = remainsheir_dna_entry
+			portrait_override={
+			portrait_modifier_overrides={
+			custom_hair=male_hair_western_09
+			custom_beards=male_empty
+		}
+	}
+}
+
+duncreek_3460 = {
+	name = "Pisser"
+	culture = iliac
+	religion = breton_cult
+	sexuality = heterosexual
+
+	trait = weak
+	trait = shrewd
+	trait = education_stewardship_4
+	trait = content
+	trait = deviant
+	trait = lustful
+	3425.1.1 = { birth = yes }
+	3492.1.1 = { death = yes }
+}
+
+graystone_3460 = {
+	name = "Charles"
+	culture = iliac
+	religion = breton_cult
+	sexuality = heterosexual
+
+	trait = weak
+	trait = shrewd
+	trait = education_stewardship_4
+	trait = content
+	trait = deviant
+	trait = lustful
+	3425.1.1 = { birth = yes }
+	3492.1.1 = { death = yes }
+}
